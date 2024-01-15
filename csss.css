@@ -1,0 +1,395 @@
+@font-face {
+    font-family: vazir;
+    src: url(./fonts/vazir);
+  }
+  
+  @font-face {
+    font-family: inter;
+    src: url(./fonts/Inter.ttf);
+  }
+
+  body{
+    font-family:vazir ;
+    font-family: inter;
+    background:linear-gradient(to right , BLUE , RED , yellow);
+    font-size: 100%;
+    line-height: 1.6;
+  }
+
+  #name{
+    color: red;
+  }
+  .header-container {
+    display: flex;
+    align-items: center; 
+    padding: 20px;
+    background-color: rgb(124, 124, 124);
+    margin-top: 4rem;
+    font-weight: bold;
+  }
+
+  .b{
+    color: #ddd;
+    margin-right: 30rem;
+    font-size: 200%;
+    font-weight: bold;
+  }
+
+  
+  
+  #search {
+    width: 100%;
+    height: 100%;
+    position: fixed; 
+    top: 0;
+    right: 0;
+    background-color: rgba(41, 41, 41, 0.9);
+    justify-content: center;
+    align-items: center;
+    color:black;
+    display: none;
+  }
+  
+  #search:target {
+    display: flex;
+  }
+  
+  #search form {
+    width: 100%;
+   max-width: 140px;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+  
+  @media (min-width:1024px){
+    #search form {
+      max-width: 250px;
+      margin-left: 30rem;
+    }
+  }
+  #search input {
+    width: 100%;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 0.25em;
+  
+  }
+  
+  #search div {
+    display: flex;
+    gap: 1em;
+    justify-content: flex-end;
+    color: white;
+  }
+  
+  #search a,
+  #search button {
+    border: none;
+    padding: 0.25em 1em;
+    border-radius: 0.25em;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+  }
+  #search a {
+    background-color: red;
+    text-decoration: none;
+  }
+  #search button {
+    background-color: green;
+  }
+  
+
+  nav {
+    background-color: rgb(63, 63, 63);
+    overflow: hidden;
+  }
+
+  @media (min-width:1024px){
+    nav {
+      margin-bottom: 1rem;
+    }
+  }
+  
+  #b{
+    color: rgb(0, 0, 0);
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+  
+  @media (min-width:375px){
+    #b { 
+    margin-right: 1rem;
+    margin-left: 1rem;
+
+    }
+  }
+  
+  @media (min-width:425px){
+    #b {
+      margin-right: 1rem;
+      margin-left: 1rem;
+    }
+  }
+  
+  
+  @media (min-width:1024px){
+    #b {
+      margin-right: 30rem;
+      font-weight: bold;
+      margin-left: 4rem;
+      font-size: xx-large;
+    }
+  }
+  
+  
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(63, 63, 63);
+  }
+
+  nav ul li {
+    float: right;
+    background-color: rgb(63, 63, 63);
+    padding-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 0px;
+  }
+  @media (min-width:1024px){
+    nav ul li {
+      float: right;
+      padding-bottom: -1.5rem;
+    }
+    nav ul li a {
+      margin-left: 0px;
+    }
+  }
+
+  nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 0 1rem;
+    text-decoration: none;
+    margin: 0px;
+  }
+  nav ul li a:hover {
+    background-color: white;
+    color: black;
+    width: 3rem;
+  }
+
+
+
+
+  article{
+    background-color: rgb(34, 34, 34);
+  }
+
+  #a-e {
+    flex-direction: row-reverse;
+  }
+
+  @media (min-width:1024px){
+    #a-e {
+      display: flex;
+    }
+  }
+  @media (min-width:1024px){
+  aside {
+    display: flex;
+  }
+}
+aside {
+  width: 100%;
+  background-color: rgba(#f4f4f4);
+  padding: 1rem;
+  box-sizing: border-box;
+}
+@media (min-width:1024px){
+  aside {
+    width: 200px;
+  }
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  ul li {
+   padding: 0.5em;
+     background: white;
+   margin-bottom: .5rem;
+    font-size: large;
+  }
+  
+  @media (min-width:1024px){
+    ul li {
+      margin-bottom: 1em;
+      width: 5rem;
+      padding-left: 5rem;
+    }
+  }
+  
+  
+  aside ul li:hover{
+    background-color: rgb(53, 52, 52);
+  }
+  aside ul li:hover a{
+    color: #ddd;
+  }
+  aside ul li{
+    background-color: white;
+  }
+  aside ul li a{
+    color: black;
+    text-decoration: none;
+    margin-right: 6.5rem;
+  }
+  
+  @media (min-width:375px){
+    aside ul li a{
+      margin-right: 8rem;
+    }
+  }
+  
+  @media (min-width:425px){
+    aside ul li a{
+      margin-right: 10rem;
+    }
+  }
+  
+  @media (min-width:1024px){
+    aside ul li a{
+      margin-right: 0rem;
+    }
+  }
+
+  #n {
+    font-size: 200%;
+    color: #ddd;
+    margin-right: 20rem;
+}
+  article{
+    width: 76rem;
+    margin-right: .5rem;
+  }
+
+ #namee {
+    margin-left: 1rem;
+ }
+
+form{
+    color: #ddd;
+    margin-right: 25rem;
+}
+
+h2{
+    font-size: 250%;
+    color: red;
+}
+#z{
+    margin-left: 2rem;
+}
+#ca:not([type="checkbox"]) {
+  display: block;
+}
+
+.ca:not([type="checkbox"]){
+  display: block;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.ca label ,
+.ca input:not([type="checkbox"]){
+  display: block;
+  margin-bottom: .7rem;
+}
+.ca input.invalid{
+  background: #eee;
+}
+.ca input:invalid {
+  background: #fcb9b9 !important;
+}
+
+input .text:not([type="checkbox"]){
+  display: inlin;
+}
+
+.ca input:focus{
+  background: #ddf1f2;
+  outline: none;
+  border: 1px solid red !important;
+}
+
+.ca input:not([type="checkbox"]){
+  width: 20rem;
+}
+
+.ca input:not([type="checkbox"]){
+  width: 15rem;
+  font-family: inherit;
+  padding: .6rem .6rem;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.ca select:not([type="checkbox"]) {
+  width: 16rem;
+  font-family: inherit;
+  padding: .6rem .6rem;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+#v{
+  margin-right: 5rem;
+  margin-top: 2rem;
+  width: 5rem ;
+  height: 2rem;
+}
+
+.checkbox input {
+  display: none;
+}
+
+.checkbox .w {
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  display:block;
+  float: none;
+  margin-right: 5rem;
+}
+
+
+.checkbox:hover .w {
+  background-color: yellow;
+}
+
+#TV {
+  display: flex;
+}
+#v {
+  background: yellowgreen;
+  margin-right: 2rem;
+  margin-top: 0rem;
+  width: 4rem;
+  height: 2.5rem;
+}
+
+#t {
+  background-color: red;
+  height: 2.5rem;
+  width: 4rem;
+  margin-right: 1rem;
+}
+#TV a{
+  text-decoration: none;
+}
